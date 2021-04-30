@@ -1,0 +1,78 @@
+/* Globals and utilities */
+
+
+/* PaulIrish trick */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.pink-color {
+    color: #FA6980;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.boxWithShadow {
+    box-shadow: 2px 2px 5px #999;
+    margin-bottom: 5px;
+}
+
+img.icon {
+    width: 15px;
+}
+
+.bottom-line {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.text-size-1 {
+    font-size: 1.4em;
+}
+
+.text-size-2 {
+    font-size: 1.2em;
+}
+
+
+/*  */
+
+
+/* sectionAmericaSur */
+
+section.sectionAmericaSur {
+    background-image: url("/assets/img/Viajes_Hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 35em;
+}
+
+.lugares-maravillosos-text {
+    line-height: 2em;
+    border-top: 2px solid #FFFFFF;
+}
