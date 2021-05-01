@@ -226,6 +226,12 @@ div.background-image {
     border-radius: 6px;
 }
 
+@media (min-width: 1024px) {
+    div.background-image {
+        height: 28em;
+    }
+}
+
 div.background-bridge {
     background-image: url("/assets/img/articulo_big_01.png");
 }
