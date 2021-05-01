@@ -218,6 +218,14 @@ span.badge {
 
 /* Section Blog */
 
+@media (min-width: 1024px) {
+    .myContainer-lg {
+        max-width: 1024px;
+        margin: 0 auto;
+        width: calc(100% - 20%);
+    }
+}
+
 div.background-image {
     background-size: cover;
     background-repeat: no-repeat;
