@@ -25,16 +25,38 @@ p {
     margin: 0;
 }
 
+.myContainer {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: calc(100% - 20%);
+}
+
 .font-weight-700 {
     font-weight: 700;
 }
 
-.pink-color {
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.pink-text {
     color: #FA6980;
+}
+
+.black-text {
+    color: #2A3037;
 }
 
 .white-text {
     color: #FFFFFF;
+}
+
+.grey-text {
+    color: #7F8891;
 }
 
 .boxWithShadow {
@@ -51,11 +73,36 @@ img.icon {
 }
 
 .text-size-1 {
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
 
 .text-size-2 {
+    font-size: 1.5em;
+}
+
+.text-size-3 {
     font-size: 1.2em;
+}
+
+.text-size-4 {
+    font-size: 1em;
+}
+
+.text-size-5 {
+    font-size: 0.8em;
+}
+
+.bg-secondary {
+    background-color: #FA6980 !important;
+}
+
+.relative {
+    position: relative;
+    top: -45px;
+}
+
+.absolute {
+    position: absolute;
 }
 
 
@@ -75,4 +122,24 @@ section.sectionAmericaSur {
 .lugares-maravillosos-text {
     line-height: 2em;
     border-top: 2px solid #FFFFFF;
+}
+
+
+/* Section tendencias */
+
+section.sectionTendencias {
+    background-color: #EBEBEB;
+    height: 500px;
+}
+
+
+/* Section Blog */
+
+div.background-bridge {
+    background-image: url("/assets/img/articulo_big_01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 28em;
+    border-radius: 6px;
 }
