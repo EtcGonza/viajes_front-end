@@ -1,0 +1,117 @@
+/* Globals and utilities */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.myContainer {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: calc(100% - 20%);
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.pink-text {
+    color: #FA6980;
+}
+
+.black-text {
+    color: #2A3037;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.grey-text {
+    color: #7F8891;
+}
+
+.white-grey-text {
+    color: #CBD0D3;
+}
+
+.background-black {
+    background-color: #2A3037;
+}
+
+.boxWithShadow {
+    box-shadow: 2px 2px 5px #999;
+    margin-bottom: 3px;
+}
+
+img.icon {
+    width: 16px;
+}
+
+.bottom-line {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.text-size-1 {
+    font-size: 1.5em;
+}
+
+.text-size-2 {
+    font-size: 1.2em;
+}
+
+.text-size-3 {
+    font-size: 1em;
+}
+
+.text-size-4 {
+    font-size: 0.8em;
+}
+
+.bg-secondary {
+    background-color: #FA6980 !important;
+    border-radius: 6px;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.only-web {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .only-web {
+        display: block;
+    }
+}
