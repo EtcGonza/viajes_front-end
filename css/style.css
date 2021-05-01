@@ -1,8 +1,5 @@
 /* Globals and utilities */
 
-
-/* PaulIrish trick */
-
 html {
     box-sizing: border-box;
 }
@@ -73,7 +70,7 @@ p {
 }
 
 img.icon {
-    width: 15px;
+    width: 16px;
 }
 
 .bottom-line {
@@ -81,22 +78,18 @@ img.icon {
 }
 
 .text-size-1 {
-    font-size: 1.7em;
-}
-
-.text-size-2 {
     font-size: 1.5em;
 }
 
-.text-size-3 {
+.text-size-2 {
     font-size: 1.2em;
 }
 
-.text-size-4 {
+.text-size-3 {
     font-size: 1em;
 }
 
-.text-size-5 {
+.text-size-4 {
     font-size: 0.8em;
 }
 
@@ -163,7 +156,7 @@ a {
 }
 
 
-/* sectionAmericaSur */
+/* section America del Sur */
 
 section.sectionAmericaSur {
     background-image: url("/assets/img/Viajes_Hero.jpg");
@@ -171,6 +164,15 @@ section.sectionAmericaSur {
     background-repeat: no-repeat;
     background-position: center center;
     height: 35em;
+}
+
+section.sectionAmericaSur h1 {
+    font-size: 1.5em;
+}
+
+section.sectionAmericaSur img.pin-icon {
+    width: 11px;
+    height: 16px;
 }
 
 .lugares-maravillosos-text {
@@ -183,8 +185,15 @@ section.sectionAmericaSur {
         height: 45em;
         padding-top: 10%;
     }
+    section.sectionAmericaSur h1 {
+        font-size: 2.9em;
+    }
+    section.sectionAmericaSur img.pin-icon {
+        width: 23px;
+        height: 34px;
+    }
     div.text-america {
-        max-width: 35%;
+        max-width: 40%;
     }
     div.proximaAventura {
         height: 177px;
