@@ -23,23 +23,29 @@
 <body>
 
     <header class="boxWithShadow d-flex align-items-center">
-        <div class="myContainer d-flex justify-content-between">
-            <div>
+        <div class="myContainer ">
+            <div class="d-flex justify-content-between">
                 <img src="./assets/logo/logo_01.svg" alt="viajes_logo_pink">
-                <!-- <input type="checkbox" id="menu">
-                    <label for="menu">
+                <label for="nav_trigger" class="hamburguer-menu">
                         <img src="./assets/iconos/hamburguer_menu.svg" alt="hamburguer_menu">
-                    </label> -->
+                    </label>
+
             </div>
-
-            <nav class="d-flex align-items-center">
-                <a class="font-weight-500 black-text text-size-3 only-web" href="#">HOME</a>
-                <a class="font-weight-500 white-grey-text text-size-3 only-web" href="#">TENDENCIAS</a>
-                <a class="font-weight-500 white-grey-text text-size-3 only-web" href="#">BLOG</a>
-            </nav>
         </div>
-
     </header>
+    <input type="checkbox" id="nav_trigger">
+
+
+    <nav class="d-flex flex-column main_nav">
+        <label for="nav_trigger" class="nav_close_icon">
+            <img src="./assets/iconos/close_icon.svg" alt="close_icon">
+        </label>
+        <ul>
+            <li><a class="font-weight-500 black-text" href="#">HOME</a></li>
+            <li><a class="font-weight-500 black-text" href="#">TENDENCIAS</a></li>
+            <li><a class="font-weight-500 black-text" href="#">BLOG</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section class="sectionAmericaSur container-fluid d-flex align-items-center align-items-lg-start relative">
