@@ -69,7 +69,7 @@ p {
 
 .boxWithShadow {
     box-shadow: 2px 2px 5px #999;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 img.icon {
@@ -101,20 +101,66 @@ img.icon {
 }
 
 .bg-secondary {
-    background-color: #FA6980;
+    background-color: #FA6980 !important;
+    border-radius: 6px;
 }
 
 .relative {
     position: relative;
-    /* top: -45px; */
 }
 
 .absolute {
     position: absolute;
 }
 
+.only-web {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .only-web {
+        display: block;
+    }
+}
+
 
 /*  */
+
+
+/* header */
+
+header {
+    height: 50px;
+}
+
+div.nav-slider-container {
+    background-image: url("/assets/iconos/nav_slider.svg");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 100%;
+    left: 0px;
+    bottom: 1%;
+}
+
+@media (min-width: 1024px) {
+    div.nav-slider-container {
+        background-image: url("/assets/iconos/nav_slider_long.svg");
+        left: 0px;
+        bottom: 10%;
+    }
+}
+
+header input {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
 
 
 /* sectionAmericaSur */
@@ -132,11 +178,36 @@ section.sectionAmericaSur {
     border-top: 2px solid #FFFFFF;
 }
 
+@media (min-width: 1024px) {
+    section.sectionAmericaSur {
+        height: 45em;
+        padding-top: 10%;
+    }
+    div.text-america {
+        max-width: 35%;
+    }
+    div.proximaAventura {
+        height: 177px;
+        width: 280px;
+        background: #2A3037 0% 0% no-repeat padding-box;
+        background: rgba(42, 48, 55, 0.5);
+        border: 2px dashed rgba(255, 255, 255, 0.5);
+        border-radius: 6px;
+        bottom: 10%;
+        right: 10%;
+    }
+}
+
 
 /* Section tendencias */
 
 section.sectionTendencias {
     background-color: #EBEBEB;
+}
+
+span.badge {
+    top: -45px;
+    padding: 7px 12px;
 }
 
 

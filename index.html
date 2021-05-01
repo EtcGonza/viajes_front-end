@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- PROTOTIPO
+    https://xd.adobe.com/view/bece1886-2d39-4a2d-7edd-5ded2d62c3f7-c8ff/?fullscreen
 
+    ---
+    ESPECIFICACIONES PARA DESARROLLO
+    https://xd.adobe.com/spec/bc76907a-c10e-45f0-6de6-d91827b67f2b-ca47/ -->
 
 <head>
     <meta charset="UTF-8">
@@ -17,21 +22,27 @@
 
 <body>
 
-    <header class="boxWithShadow">
-        <div class="d-flex align-items-center justify-content-between p-3">
-            <div>
-                <p class="font-weight-700 pink-text text-size-1">VIAJES</p>
-            </div>
-
-            <div>
-                <i class="fas fa-bars"></i>
-            </div>
+    <header class="boxWithShadow d-flex align-items-center">
+        <div class="myContainer d-flex align-items-center justify-content-between">
+            <p class="font-weight-700 pink-text text-size-1">VIAJES</p>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="./assets/iconos/hamburguer_menu.svg" alt="hamburguer_menu">
+            </label>
         </div>
     </header>
 
+    <!-- <nav>
+        <ul class="p-4">
+            <li> <a class="font-weight-700 black-text text-size-3" href="#">HOME</a> </li>
+            <li> <a class="font-weight-700 black-text text-size-3" href="#">TENDENCIAS</a> </li>
+            <li> <a class="font-weight-700 black-text text-size-3" href="#">BLOG</a> </li>
+        </ul>
+    </nav> -->
+
     <main>
-        <section class="sectionAmericaSur container d-flex align-items-center">
-            <div class="p-4">
+        <section class="sectionAmericaSur container-fluid d-flex align-items-center align-items-lg-start relative">
+            <div class="ms-xl-5 p-4 text-america">
                 <div class="d-flex pb-3">
                     <img class="icon me-2" src="./assets/iconos/ic_pin.svg" alt="pin_icon">
                     <h1 class="font-weight-700 white-text text-size-2">AMERICA DEL SUR</h1>
@@ -39,6 +50,22 @@
 
                 <div>
                     <p class="pt-3 font-weight-700 white-text lugares-maravillosos-text text-size-3">Lugares maravillosos por America del Sur</p>
+                    <p class="text-size-5 pt-2 font-weight-500 text-white only-web">Estos son algunos lugares que elijen la mayoría de los turistas que visitan America del Sur.</p>
+                </div>
+            </div>
+
+            <div class="absolute nav-slider-container">
+            </div>
+
+            <div class="proximaAventura d-flex align-items-center only-web absolute">
+                <div class="myContainer only-web">
+                    <div class="d-flex">
+                        <p class="font-weight-700 pink-text me-4 clear-opacity">PRÓXIMA AVENTURA</p>
+                        <img src="./assets/iconos/arrow.svg" alt="arrow">
+                    </div>
+
+                    <p class="my-1 font-weight-700 white-text clear-opacity">Europa Meridional</p>
+                    <p class="font-weight-300 white-text clear-opacity">Forman parte veinte países, ej, España, Francia, etc</p>
                 </div>
             </div>
         </section>
@@ -111,5 +138,23 @@
         </div>
     </footer>
 </body>
+
+<script>
+    window.addEventListener("load", () => {
+        document.body.classList.remove("preload");
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const nav = document.querySelector(".nav");
+
+        document.querySelector("#btnNav").addEventListener("click", () => {
+            nav.classList.add("nav--open");
+        });
+
+        document.querySelector(".nav__overlay").addEventListener("click", () => {
+            nav.classList.remove("nav--open");
+        });
+    });
+</script>
 
 </html>
