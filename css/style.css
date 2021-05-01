@@ -126,29 +126,16 @@ header {
     height: 50px;
 }
 
-div.nav-slider-container {
-    background-image: url("/assets/iconos/nav_slider.svg");
-    background-repeat: no-repeat;
-    height: 60px;
-    width: 100%;
-    left: 0px;
-    bottom: 1%;
-}
-
-@media (min-width: 1024px) {
-    div.nav-slider-container {
-        background-image: url("/assets/iconos/nav_slider_long.svg");
-        left: 0px;
-        bottom: 10%;
-    }
-}
-
 header input {
     display: none;
 }
 
-li {
-    list-style-type: none;
+header a {
+    margin-right: 33px;
+}
+
+header a:last-of-type {
+    margin-right: 0px;
 }
 
 a {
@@ -180,6 +167,15 @@ section.sectionAmericaSur img.pin-icon {
     border-top: 2px solid #FFFFFF;
 }
 
+div.nav-slider-container {
+    background-image: url("/assets/iconos/nav_slider.svg");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 100%;
+    left: 0px;
+    bottom: 1%;
+}
+
 @media (min-width: 1024px) {
     section.sectionAmericaSur {
         height: 45em;
@@ -204,6 +200,11 @@ section.sectionAmericaSur img.pin-icon {
         border-radius: 6px;
         bottom: 10%;
         right: 10%;
+    }
+    div.nav-slider-container {
+        background-image: url("/assets/iconos/nav_slider_long.svg");
+        left: 0px;
+        bottom: 10%;
     }
 }
 
