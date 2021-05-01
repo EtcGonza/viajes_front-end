@@ -189,7 +189,7 @@ div.nav-slider-container {
         height: 34px;
     }
     div.text-america {
-        max-width: 40%;
+        max-width: 55%;
     }
     div.proximaAventura {
         height: 177px;
@@ -199,7 +199,7 @@ div.nav-slider-container {
         border: 2px dashed rgba(255, 255, 255, 0.5);
         border-radius: 6px;
         bottom: 10%;
-        right: 10%;
+        right: 14%;
     }
     div.nav-slider-container {
         background-image: url("/assets/iconos/nav_slider_long.svg");
