@@ -28,6 +28,25 @@ p {
     width: calc(100% - 20%);
 }
 
+
+/* Text Styles */
+
+.text-size-1 {
+    font-size: 1.5em;
+}
+
+.text-size-2 {
+    font-size: 1.2em;
+}
+
+.text-size-3 {
+    font-size: 1em;
+}
+
+.text-size-4 {
+    font-size: 0.8em;
+}
+
 .font-weight-700 {
     font-weight: 700;
 }
@@ -73,31 +92,6 @@ img.icon {
     width: 16px;
 }
 
-.bottom-line {
-    border-bottom: 2px solid #FFFFFF;
-}
-
-.text-size-1 {
-    font-size: 1.5em;
-}
-
-.text-size-2 {
-    font-size: 1.2em;
-}
-
-.text-size-3 {
-    font-size: 1em;
-}
-
-.text-size-4 {
-    font-size: 0.8em;
-}
-
-.bg-secondary {
-    background-color: #FA6980 !important;
-    border-radius: 6px;
-}
-
 .relative {
     position: relative;
 }
@@ -105,6 +99,9 @@ img.icon {
 .absolute {
     position: absolute;
 }
+
+
+/* Hide elements when we are on mobile */
 
 .only-web {
     display: none;

@@ -124,6 +124,11 @@ section.sectionTendencias {
     background-color: #EBEBEB;
 }
 
+.bg-secondary {
+    background-color: #FA6980 !important;
+    border-radius: 6px;
+}
+
 div.posicionarBadge {
     bottom: -30px;
     right: -30px;
@@ -145,7 +150,7 @@ span.badge {
     }
 }
 
-div.background-image {
+article.background-image {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -154,16 +159,16 @@ div.background-image {
 }
 
 @media (min-width: 1024px) {
-    div.background-image {
+    article.background-image {
         height: 28em;
     }
 }
 
-div.background-bridge {
+article.background-bridge {
     background-image: url("/assets/img/articulo_big_01.png");
 }
 
-div.background-forest {
+article.background-forest {
     background-image: url("/assets/img/articulo_big_02.png");
 }
 
