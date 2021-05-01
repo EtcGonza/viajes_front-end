@@ -205,6 +205,11 @@ section.sectionTendencias {
     background-color: #EBEBEB;
 }
 
+div.posicionarBadge {
+    bottom: -30px;
+    right: -30px;
+}
+
 span.badge {
     top: -45px;
     padding: 7px 12px;
