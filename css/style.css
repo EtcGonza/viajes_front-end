@@ -59,6 +59,14 @@ p {
     color: #7F8891;
 }
 
+.white-grey-text {
+    color: #CBD0D3;
+}
+
+.background-black {
+    background-color: #2A3037;
+}
+
 .boxWithShadow {
     box-shadow: 2px 2px 5px #999;
     margin-bottom: 5px;
@@ -93,12 +101,12 @@ img.icon {
 }
 
 .bg-secondary {
-    background-color: #FA6980 !important;
+    background-color: #FA6980;
 }
 
 .relative {
     position: relative;
-    top: -45px;
+    /* top: -45px; */
 }
 
 .absolute {
@@ -129,17 +137,38 @@ section.sectionAmericaSur {
 
 section.sectionTendencias {
     background-color: #EBEBEB;
-    height: 500px;
 }
 
 
 /* Section Blog */
 
-div.background-bridge {
-    background-image: url("/assets/img/articulo_big_01.png");
+div.background-image {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 28em;
     border-radius: 6px;
+}
+
+div.background-bridge {
+    background-image: url("/assets/img/articulo_big_01.png");
+}
+
+div.background-forest {
+    background-image: url("/assets/img/articulo_big_02.png");
+}
+
+div.footer-blog-item {
+    bottom: 2em;
+}
+
+
+/* Footer */
+
+footer {
+    height: 80px;
+}
+
+footer div:first-child {
+    height: 100%;
 }
