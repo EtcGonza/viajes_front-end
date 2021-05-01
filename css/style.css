@@ -51,6 +51,15 @@ a {
     text-decoration: none;
 }
 
+div.background-grey {
+    /* position: relative; */
+    position: absolute;
+    background-color: #EBEBEB;
+    height: 50em;
+    width: 100%;
+    bottom: -75%;
+}
+
 
 /* section America del Sur */
 
