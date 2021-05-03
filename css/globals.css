@@ -96,19 +96,25 @@ img.icon {
     position: relative;
 }
 
-.absolute {
-    position: absolute;
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 
 /* Hide elements when we are on mobile */
 
-.only-web {
+.only-web,
+.only-web div {
     display: none;
 }
 
 @media (min-width: 1024px) {
-    .only-web {
+    .only-web,
+    .only-web div {
         display: block;
     }
 }

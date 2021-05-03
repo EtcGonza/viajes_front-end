@@ -4,9 +4,12 @@
 <!-- PROTOTIPO
     https://xd.adobe.com/view/bece1886-2d39-4a2d-7edd-5ded2d62c3f7-c8ff/?fullscreen
 
-    ---
     ESPECIFICACIONES PARA DESARROLLO
-    https://xd.adobe.com/spec/bc76907a-c10e-45f0-6de6-d91827b67f2b-ca47/ -->
+    https://xd.adobe.com/spec/bc76907a-c10e-45f0-6de6-d91827b67f2b-ca47/ 
+
+    My repository
+    https://github.com/EtcGonza/viajes_front-end
+-->
 
 <head>
     <meta charset="UTF-8">
@@ -27,9 +30,9 @@
         <div class="myContainer">
             <div class="d-flex justify-content-between">
                 <img src="./assets/logo/logo_01.svg" alt="viajes_logo_pink">
-                <label for="nav_trigger" class="mobile-menu hamburguer-menu"><img class="mobile-menu" src="./assets/iconos/hamburguer_menu.svg" alt="hamburguer_menu"></label>
+                <label for="mobileMenu_trigger" class="cursorPointer"><img class="mobile-menu" src="./assets/iconos/hamburguer_menu.svg" alt="hamburguer_menu"></label>
 
-                <div class="menu-desktop d-flex align-items-center">
+                <div class="menu-desktop">
                     <a class="font-weight-500 black-text text-size-3" href="#">HOME</a>
                     <a class="font-weight-500 white-grey-text text-size-3" href="#tendencias">TENDENCIAS</a>
                     <a class="font-weight-500 white-grey-text text-size-3" href="#blog">BLOG</a>
@@ -40,9 +43,9 @@
 
     <!-- Mobile menu -->
     <div class="mobile-menu">
-        <input type="checkbox" id="nav_trigger">
+        <input type="checkbox" id="mobileMenu_trigger">
         <nav class="d-flex flex-column">
-            <label for="nav_trigger" class="nav_close_icon">
+            <label for="mobileMenu_trigger" class="nav_close_icon">
                 <img src="./assets/iconos/close_icon.svg" alt="close_icon">
             </label>
 
@@ -51,36 +54,38 @@
                 <li><a class="font-weight-500 black-text" href="#tendencias">TENDENCIAS</a></li>
                 <li><a class="font-weight-500 black-text" href="#blog">BLOG</a></li>
             </ul>
+
         </nav>
     </div>
 
 
     <main>
         <div class="background-grey"></div>
-        <section class="sectionAmericaSur container-fluid d-flex align-items-center align-items-lg-start relative">
+
+        <section class="americaSurImg americaSurSection d-flex align-items-center align-items-lg-start relative">
             <div class="myContainer-lg">
-                <div class="p-4 text-america">
+                <div class="americaSurTextWidth p-4">
                     <div class="d-flex align-items-center pb-3">
                         <img class="pin-icon me-2" src="./assets/iconos/ic_pin.svg" alt="pin_icon">
                         <h1 class="font-weight-700 white-text">AMERICA DEL SUR</h1>
                     </div>
 
-                    <p class="pt-3 font-weight-700 white-text lugares-maravillosos-text text-size-2">Lugares maravillosos por America del Sur</p>
+                    <p class="font-weight-700 white-text lugares-maravillosos text-size-2 pt-3">Lugares maravillosos por America del Sur</p>
                     <p class="text-size-4 pt-2 font-weight-500 text-white only-web">Estos son algunos lugares que elijen la mayoría de los turistas que visitan America del Sur.</p>
                 </div>
             </div>
 
-            <div class="absolute nav-slider-container"></div>
+            <div class="nav-slider-container"></div>
 
-            <div class="proximaAventura d-flex align-items-center only-web absolute">
-                <div class="myContainer only-web">
+            <div class="proximaAventura d-flex align-items-center only-web">
+                <div class="myContainer">
                     <div class="d-flex">
-                        <p class="font-weight-700 pink-text me-4 clear-opacity">PRÓXIMA AVENTURA</p>
+                        <p class="font-weight-700 pink-text me-4">PRÓXIMA AVENTURA</p>
                         <img src="./assets/iconos/arrow.svg" alt="arrow">
                     </div>
 
-                    <p class="my-1 font-weight-700 white-text clear-opacity">Europa Meridional</p>
-                    <p class="font-weight-300 white-text clear-opacity">Forman parte veinte países, ej, España, Francia, etc</p>
+                    <p class="my-1 font-weight-700 white-text">Europa Meridional</p>
+                    <p class="font-weight-300 white-text">Forman parte veinte países, ej, España, Francia, etc</p>
                 </div>
             </div>
         </section>
@@ -92,7 +97,7 @@
                 <div class="card-group">
                     <article class="card me-lg-3 boxWithShadow">
                         <img src="./assets/img/card_01.png" class="card-img-top" alt="Montañas_y_magia">
-                        <div class="posicionarBadge relative">
+                        <div class="badgePosition relative">
                             <span class="badge bg-secondary absolute">NUEVO</span>
                         </div>
 
@@ -129,15 +134,15 @@
             </div>
 
             <div class="myContainer-lg">
-                <div class="container-lg container-sm-fluid">
-
+                <div class="container-lg">
                     <div class="row">
                         <div class="col-lg-8 col-md-12 px-0">
-                            <article class="background-bridge background-image relative">
-                                <div class="myContainer d-flex flex-column pt-5">
+
+                            <article class="bridge-img articleBackgroundImage relative">
+                                <div class="myContainer pt-5">
                                     <h3 class="text-size-3 font-weight-700 white-text">CIUDAD</h3>
 
-                                    <div class="myContainer align-self-center absolute footer-blog-item">
+                                    <div class="absolute-footer-blog-item">
                                         <div class="mb-3">
                                             <h3 class="font-weight-700 white-text">Artículo de puente</h3>
                                             <p class="weight-700 text-size-4 white-text only-web">Un puente es una construcción que permite salvar un accidente geográfico.</p>
@@ -151,11 +156,11 @@
                                 </div>
                             </article>
 
-                            <article class="background-forest background-image mt-5 relative">
-                                <div class="myContainer d-flex flex-column pt-5">
+                            <article class="forest-img articleBackgroundImage mt-5 relative">
+                                <div class="myContainer pt-5">
                                     <h3 class="text-size-3 font-weight-700 white-text">Aventura de bosque</h3>
 
-                                    <div class="myContainer align-self-center absolute footer-blog-item">
+                                    <div class="absolute-footer-blog-item">
                                         <div class="mb-3">
                                             <h3 class="font-weight-700 white-text">Aventura de bosque</h3>
                                             <p class="weight-700 text-size-4 white-text only-web">Lugar poblado de árboles y arbustos. Área con una importante densidad de árboles.</p>
@@ -168,12 +173,14 @@
                                     </div>
                                 </div>
                             </article>
+
                         </div>
 
                         <div class="col-4 only-web">
+
                             <article class="relative">
-                                <img src="./assets/img/articulo_small_01.png" alt="">
-                                <div class="d-flex flex-column pt-3">
+                                <img src="./assets/img/articulo_small_01.png" alt="elephant_img">
+                                <div class="pt-3">
                                     <p class="text-size-3 font-weight-700 black-text">Artículo de elefante</p>
                                     <div class="d-flex pt-2">
                                         <img class="white-grey-text icon me-2" src="./assets/iconos/time.svg" alt="time_icon">
@@ -182,9 +189,9 @@
                                 </div>
                             </article>
 
-                            <article class="mt-5">
-                                <img src="./assets/img/articulo_small_02.png" alt="">
-                                <div class="d-flex flex-column pt-3">
+                            <article class="relative mt-5">
+                                <img src="./assets/img/articulo_small_02.png" alt="bird_img">
+                                <div class="pt-3">
                                     <p class="text-size-3 font-weight-700 black-text">Artículo de loro</p>
                                     <div class="d-flex pt-2">
                                         <img class="white-grey-text icon me-2" src="./assets/iconos/time.svg" alt="time_icon">
@@ -194,8 +201,8 @@
                             </article>
 
                             <article class="mt-5">
-                                <img src="./assets/img/articulo_small_03.png" alt="">
-                                <div class="d-flex flex-column pt-3">
+                                <img src="./assets/img/articulo_small_03.png" alt="route_img">
+                                <div class="pt-3">
                                     <p class="text-size-3 font-weight-700 black-text">Artículo de camino</p>
                                     <div class="d-flex pt-2">
                                         <img class="white-grey-text icon me-2" src="./assets/iconos/time.svg" alt="time_icon">
@@ -223,23 +230,5 @@
         </div>
     </footer>
 </body>
-
-<script>
-    window.addEventListener("load", () => {
-        document.body.classList.remove("preload");
-    });
-
-    document.addEventListener("DOMContentLoaded", () => {
-        const nav = document.querySelector(".nav");
-
-        document.querySelector("#btnNav").addEventListener("click", () => {
-            nav.classList.add("nav--open");
-        });
-
-        document.querySelector(".nav__overlay").addEventListener("click", () => {
-            nav.classList.remove("nav--open");
-        });
-    });
-</script>
 
 </html>

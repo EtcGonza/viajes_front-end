@@ -2,60 +2,46 @@
 
 header {
     height: 50px;
+    width: 100%;
+    background-color: #FFFFFF;
 }
 
 @media (min-width: 1024px) {
     header {
-        height: 50px;
         position: fixed;
         z-index: 99999;
-        background-color: #FFFFFF;
-        width: 100%;
     }
-}
-
-header input {
-    display: none;
-}
-
-header a {
-    margin-right: 33px;
-}
-
-header a:last-of-type {
-    margin-right: 0px;
-}
-
-label.hamburguer-menu {
-    cursor: pointer;
 }
 
 header div.menu-desktop {
     display: none !important;
 }
 
+header div.menu-desktop a {
+    margin-right: 33px;
+}
+
+header div.menu-desktop a:last-of-type {
+    margin-right: 0px;
+}
+
 @media (min-width: 1024px) {
     header div.menu-desktop {
-        display: block !important;
+        display: flex !important;
     }
     .mobile-menu {
         display: none;
     }
 }
 
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
+.cursorPointer {
+    cursor: pointer;
 }
 
 div.background-grey {
-    /* position: relative; */
     position: absolute;
     background-color: #EBEBEB;
-    height: 50em;
+    height: 100%;
     width: 100%;
     bottom: -75%;
 }
@@ -63,29 +49,29 @@ div.background-grey {
 
 /* section America del Sur */
 
-section.sectionAmericaSur {
+section.americaSurSection {
+    height: 37em;
+}
+
+section.americaSurImg {
     background-image: url("/assets/img/Viajes_Hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 35em;
 }
 
-section.sectionAmericaSur h1 {
-    font-size: 1.5em;
-}
-
-section.sectionAmericaSur img.pin-icon {
+section.americaSurSection img.pin-icon {
     width: 11px;
     height: 16px;
 }
 
-.lugares-maravillosos-text {
+section p.lugares-maravillosos {
     line-height: 2em;
     border-top: 2px solid #FFFFFF;
 }
 
 div.nav-slider-container {
+    position: absolute;
     background-image: url("/assets/iconos/nav_slider.svg");
     background-repeat: no-repeat;
     height: 60px;
@@ -95,29 +81,30 @@ div.nav-slider-container {
 }
 
 @media (min-width: 1024px) {
-    section.sectionAmericaSur {
-        height: 45em;
+    section.americaSurSection {
+        height: 100vh;
         padding-top: 10%;
     }
-    section.sectionAmericaSur h1 {
+    section.americaSurSection h1 {
         font-size: 2.9em;
     }
-    section.sectionAmericaSur img.pin-icon {
+    section.americaSurSection img.pin-icon {
         width: 23px;
         height: 34px;
     }
-    div.text-america {
+    div.americaSurTextWidth {
         max-width: 55%;
     }
     div.proximaAventura {
+        position: absolute;
+        bottom: 10%;
+        right: 14%;
         height: 177px;
         width: 280px;
         background: #2A3037 0% 0% no-repeat padding-box;
         background: rgba(42, 48, 55, 0.5);
         border: 2px dashed rgba(255, 255, 255, 0.5);
         border-radius: 6px;
-        bottom: 10%;
-        right: 14%;
     }
     div.nav-slider-container {
         background-image: url("/assets/iconos/nav_slider_long.svg");
@@ -129,22 +116,18 @@ div.nav-slider-container {
 
 /* Section tendencias */
 
-section.sectionTendencias {
-    background-color: #EBEBEB;
-}
-
 .bg-secondary {
     background-color: #FA6980 !important;
     border-radius: 6px;
 }
 
-div.posicionarBadge {
+div.badgePosition {
     bottom: -30px;
     right: -30px;
+    top: -13px;
 }
 
 span.badge {
-    top: -45px;
     padding: 7px 12px;
 }
 
@@ -159,29 +142,31 @@ span.badge {
     }
 }
 
-article.background-image {
+article.articleBackgroundImage {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 28em;
+    max-width: 100%;
     border-radius: 6px;
 }
 
 @media (min-width: 1024px) {
-    article.background-image {
+    article.articleBackgroundImage {
         height: 28em;
     }
 }
 
-article.background-bridge {
+article.bridge-img {
     background-image: url("/assets/img/articulo_big_01.png");
 }
 
-article.background-forest {
+article.forest-img {
     background-image: url("/assets/img/articulo_big_02.png");
 }
 
-div.footer-blog-item {
+div.absolute-footer-blog-item {
+    position: absolute;
     bottom: 2em;
 }
 
@@ -197,7 +182,7 @@ footer div:first-child {
 }
 
 
-/* mobile nav */
+/* mobile menu */
 
 nav {
     position: fixed;
@@ -219,11 +204,6 @@ nav li {
     padding: 8px;
 }
 
-
-/* nav li a {
-    transition: all 0.3s ease-in-out;
-} */
-
 nav li a:hover,
 div.menu-desktop a:hover {
     color: #FA6980;
@@ -238,9 +218,9 @@ label.nav_close_icon {
 }
 
 
-/* Trigger menu */
+/* Trigger mobile menu */
 
-input#nav_trigger {
+input#mobileMenu_trigger {
     position: fixed;
     opacity: 0;
     pointer-events: none;
@@ -250,6 +230,6 @@ input#nav_trigger {
     margin: 0;
 }
 
-input#nav_trigger:checked+nav {
+input#mobileMenu_trigger:checked+nav {
     transform: translateX(0%);
 }
