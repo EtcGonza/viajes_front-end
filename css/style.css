@@ -202,7 +202,7 @@ article.article-background-image {
 
 @media (min-width: 1024px) {
     article.article-background-image {
-        height: 28em;
+        height: 25.2em;
     }
 }
 
@@ -212,6 +212,14 @@ article.bridge-img {
 
 article.forest-img {
     background-image: url("/assets/img/articulo_big_02.png");
+}
+
+.small-article-img {
+    max-width: 100%;
+}
+
+.small-article {
+    min-height: 33.3%;
 }
 
 div.absolute-footer-blog-item {

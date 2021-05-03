@@ -106,6 +106,10 @@ img.icon {
     position: relative;
 }
 
+.absolute {
+    position: absolute;
+}
+
 li {
     list-style-type: none;
 }
