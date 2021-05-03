@@ -47,6 +47,59 @@ div.background-grey {
 }
 
 
+/* mobile menu */
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    background: #FFFFFF;
+    height: 100vh;
+    z-index: 10000;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+
+ul {
+    margin-top: 70px;
+}
+
+nav li {
+    padding: 8px;
+}
+
+nav li a:hover,
+div.menu-desktop a:hover {
+    color: #FA6980;
+}
+
+label.nav_close_icon {
+    position: relative;
+    position: absolute;
+    left: 145px;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+/* Trigger mobile menu */
+
+input#mobileMenu_trigger {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+input#mobileMenu_trigger:checked+nav {
+    transform: translateX(0%);
+}
+
+
 /* section America del Sur */
 
 section.americaSurSection {
@@ -179,57 +232,4 @@ footer {
 
 footer div:first-child {
     height: 100%;
-}
-
-
-/* mobile menu */
-
-nav {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 200px;
-    background: #FFFFFF;
-    height: 100vh;
-    z-index: 10000;
-    transition: all 0.3s ease-in-out;
-    transform: translateX(100%);
-}
-
-ul {
-    margin-top: 70px;
-}
-
-nav li {
-    padding: 8px;
-}
-
-nav li a:hover,
-div.menu-desktop a:hover {
-    color: #FA6980;
-}
-
-label.nav_close_icon {
-    position: relative;
-    position: absolute;
-    left: 145px;
-    top: 10px;
-    cursor: pointer;
-}
-
-
-/* Trigger mobile menu */
-
-input#mobileMenu_trigger {
-    position: fixed;
-    opacity: 0;
-    pointer-events: none;
-    width: 0;
-    height: 0;
-    padding: 0;
-    margin: 0;
-}
-
-input#mobileMenu_trigger:checked+nav {
-    transform: translateX(0%);
 }
