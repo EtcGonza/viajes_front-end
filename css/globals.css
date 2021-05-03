@@ -22,10 +22,18 @@ p {
     margin: 0;
 }
 
-.myContainer {
+.my-container {
     max-width: 1024px;
     margin: 0 auto;
     width: calc(100% - 20%);
+}
+
+@media (min-width: 1024px) {
+    .my-container-lg {
+        max-width: 1024px;
+        margin: 0 auto;
+        width: calc(100% - 20%);
+    }
 }
 
 
@@ -79,12 +87,14 @@ p {
     color: #CBD0D3;
 }
 
-.background-black {
+.black-background {
     background-color: #2A3037;
 }
 
-.boxWithShadow {
-    box-shadow: 2px 2px 5px #999;
+.box-with-shadow {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
     margin-bottom: 3px;
 }
 

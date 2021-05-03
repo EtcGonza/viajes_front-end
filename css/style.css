@@ -43,7 +43,7 @@ div.background-grey {
     background-color: #EBEBEB;
     height: 100%;
     width: 100%;
-    bottom: -75%;
+    bottom: -85%;
 }
 
 
@@ -102,18 +102,18 @@ input#mobileMenu_trigger:checked+nav {
 
 /* section America del Sur */
 
-section.americaSurSection {
+section.america-sur-section {
     height: 37em;
 }
 
-section.americaSurImg {
+section.america-sur-img {
     background-image: url("/assets/img/Viajes_Hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-section.americaSurSection img.pin-icon {
+section.america-sur-section img.pin-icon {
     width: 11px;
     height: 16px;
 }
@@ -134,21 +134,21 @@ div.nav-slider-container {
 }
 
 @media (min-width: 1024px) {
-    section.americaSurSection {
+    section.america-sur-section {
         height: 100vh;
         padding-top: 10%;
     }
-    section.americaSurSection h1 {
+    section.america-sur-section h1 {
         font-size: 2.9em;
     }
-    section.americaSurSection img.pin-icon {
+    section.america-sur-section img.pin-icon {
         width: 23px;
         height: 34px;
     }
-    div.americaSurTextWidth {
+    div.america-sur-text-width {
         max-width: 55%;
     }
-    div.proximaAventura {
+    div.proxima-aventura {
         position: absolute;
         bottom: 10%;
         right: 14%;
@@ -169,12 +169,16 @@ div.nav-slider-container {
 
 /* Section tendencias */
 
+.card {
+    border: none;
+}
+
 .bg-secondary {
     background-color: #FA6980 !important;
     border-radius: 6px;
 }
 
-div.badgePosition {
+div.badge-position {
     bottom: -30px;
     right: -30px;
     top: -13px;
@@ -187,15 +191,7 @@ span.badge {
 
 /* Section Blog */
 
-@media (min-width: 1024px) {
-    .myContainer-lg {
-        max-width: 1024px;
-        margin: 0 auto;
-        width: calc(100% - 20%);
-    }
-}
-
-article.articleBackgroundImage {
+article.article-background-image {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -205,7 +201,7 @@ article.articleBackgroundImage {
 }
 
 @media (min-width: 1024px) {
-    article.articleBackgroundImage {
+    article.article-background-image {
         height: 28em;
     }
 }
