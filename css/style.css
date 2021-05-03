@@ -43,7 +43,7 @@ div.background-grey {
     background-color: #EBEBEB;
     height: 100%;
     width: 100%;
-    bottom: -85%;
+    bottom: -65%;
 }
 
 
@@ -113,6 +113,15 @@ section.america-sur-img {
     background-position: center center;
 }
 
+section.america-sur-section h1 {
+    font-size: 1.6em;
+}
+
+div.america-sur-text-width {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
 section.america-sur-section img.pin-icon {
     width: 11px;
     height: 16px;
@@ -130,16 +139,16 @@ div.nav-slider-container {
     height: 60px;
     width: 100%;
     left: 0px;
-    bottom: 1%;
+    bottom: 34px;
 }
 
 @media (min-width: 1024px) {
     section.america-sur-section {
         height: 100vh;
-        padding-top: 10%;
+        padding-top: 15%;
     }
     section.america-sur-section h1 {
-        font-size: 2.9em;
+        font-size: 2em;
     }
     section.america-sur-section img.pin-icon {
         width: 23px;
@@ -147,11 +156,11 @@ div.nav-slider-container {
     }
     div.america-sur-text-width {
         max-width: 55%;
+        margin: 0;
     }
     div.proxima-aventura {
         position: absolute;
         bottom: 10%;
-        right: 14%;
         height: 177px;
         width: 280px;
         background: #2A3037 0% 0% no-repeat padding-box;
@@ -163,6 +172,12 @@ div.nav-slider-container {
         background-image: url("/assets/iconos/nav_slider_long.svg");
         left: 0px;
         bottom: 10%;
+    }
+}
+
+@media (min-width: 1440px) {
+    section.america-sur-section h1 {
+        font-size: 2.9em;
     }
 }
 
