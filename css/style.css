@@ -107,7 +107,7 @@ section.america-sur-section {
 }
 
 section.america-sur-img {
-    background-image: url("/assets/img/Viajes_Hero.jpg");
+    background-image: url("../assets/img/Viajes_Hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -134,7 +134,7 @@ section p.lugares-maravillosos {
 
 div.nav-slider-container {
     position: absolute;
-    background-image: url("/assets/iconos/nav_slider.svg");
+    background-image: url("../assets/iconos/nav_slider.svg");
     background-repeat: no-repeat;
     height: 60px;
     width: 100%;
@@ -169,7 +169,7 @@ div.nav-slider-container {
         border-radius: 6px;
     }
     div.nav-slider-container {
-        background-image: url("/assets/iconos/nav_slider_long.svg");
+        background-image: url("../assets/iconos/nav_slider_long.svg");
         left: 0px;
         bottom: 10%;
     }
@@ -222,11 +222,11 @@ article.article-background-image {
 }
 
 article.bridge-img {
-    background-image: url("/assets/img/articulo_big_01.png");
+    background-image: url("../assets/img/articulo_big_01.png");
 }
 
 article.forest-img {
-    background-image: url("/assets/img/articulo_big_02.png");
+    background-image: url("../assets/img/articulo_big_02.png");
 }
 
 .small-article-img {
